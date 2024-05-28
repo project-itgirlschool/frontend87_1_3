@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "InterRegular";
+}
+
 /* colors */
 
 $primary-color: #2f2e2e;
