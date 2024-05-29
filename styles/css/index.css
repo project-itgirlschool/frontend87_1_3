@@ -1,35 +1,5 @@
-@font-face {
-  font-family: "InterRegular";
-  src: url(../../fonts/Inter-Regular.ttf);
-}
-@font-face {
-  font-family: "InterBlack";
-  src: url(../../fonts/Inter-Black.ttf);
-}
-@font-face {
-  font-family: "Inter-SemiBold";
-  src: url(../../fonts/Inter-SemiBold.ttf);
-}
-@font-face {
-  font-family: "InterBold";
-  src: url(../../fonts/Inter-Bold.ttf);
-}
-@font-face {
-  font-family: "Inter-ExtraLight";
-  src: url(../../fonts/Inter-ExtraLight.ttf);
-}
-@font-face {
-  font-family: "DisplayRegular";
-  src: url(../../fonts/PlayfairDisplay-Regular.ttf);
-}
-@font-face {
-  font-family: "DisplayBlack";
-  src: url(../../fonts/PlayfairDisplay-Black.ttf);
-}
-@font-face {
-  font-family: "DisplayBold";
-  src: url(../../fonts/PlayfairDisplay-Bold.ttf);
-}
+/* colors */
+/* fonts */
 * {
   margin: 0;
   padding: 0;
@@ -38,10 +8,12 @@
 
 body {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
-  font-family: "InterRegular";
+  font-family: "Inter", sans-serif;
 }
+
 /*# sourceMappingURL=index.css.map */
