@@ -1,5 +1,6 @@
 /* colors */
 /* fonts */
+/* adaptive */
 .footer {
   display: flex;
   background-color: #2E2F32;
@@ -54,12 +55,17 @@ a {
 
 body {
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 51px;
+  color: #2f2e2e;
 }
 
 /*# sourceMappingURL=index.css.map */

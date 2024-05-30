@@ -1,5 +1,4 @@
 /* colors */
-
 $primary-text-color: #2f2e2e;
 $footer-color: #fafafa;
 $footer-background: #2e2f32;
@@ -12,3 +11,7 @@ $textFont: "Inter", sans-serif;
 $mainFont: "Playfair Display", serif;
 $font-size_link: 20px;
 $font-size_h2: 51px;
+
+/* adaptive */
+$mobile: 425px;
+$tablet: 768px;
