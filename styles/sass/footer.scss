@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    background-color: #2E2F32;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    color: #FAFAFA;
+    padding: 50px 100px;
+    max-width: 1440px;
+    
+}
+
+p{
+    font-family: $textFont;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 171%;
+}
+
+span{
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 24px;
+    
+}
+
+a{
+    font-family: $textFont;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+
+.easy-zoom-effect:hover {
+transform: scale(1.25);
+}
+
+@media (426px <= width <= 1024px){
+    .footer{
+    display: flex;
+    background-color: #2E2F32;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #FAFAFA;
+    padding: 50px 100px;
+    gap: 20px;
+    }
+}
