@@ -1,0 +1,25 @@
+.project_header {
+  //   margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.project_nav a {
+  text-decoration: none;
+  color: $primary-text-color;
+  font-size: $font-size_link;
+  font-family: $textFont;
+}
+.project_imgcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
