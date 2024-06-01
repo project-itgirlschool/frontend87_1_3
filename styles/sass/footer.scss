@@ -1,35 +1,36 @@
 .footer{
     display: flex;
-    background-color: #2E2F32;
+    background-color: $footer-background;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    color: #FAFAFA;
+    color: $footer-color;
     padding: 50px 100px;
-    max-width: 1440px;
     
 }
 
-p{
+.footer_p{
     font-family: $textFont;
     font-weight: 400;
     font-size: 17px;
     line-height: 171%;
 }
 
-span{
-    font-family: var(--second-family);
+.footer_title{
+    font-family: $textFont;;
     font-weight: 900;
     font-size: 24px;
     
 }
 
-a{
+.footer_nav a {
+    text-decoration: none;
+    color: $primary-text-color;
     font-family: $textFont;
     font-weight: 400;
     font-size: 17px;
+    color: $footer-color;
 }
-
 
 .easy-zoom-effect:hover {
 transform: scale(1.25);
@@ -38,11 +39,11 @@ transform: scale(1.25);
 @media (426px <= width <= 1024px){
     .footer{
     display: flex;
-    background-color: #2E2F32;
+    background-color: $footer-background;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    color: #FAFAFA;
+    color: $footer-color;
     padding: 50px 100px;
     gap: 20px;
     }

@@ -31,32 +31,34 @@
 
 .footer {
   display: flex;
-  background-color: #2E2F32;
+  background-color: #2e2f32;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  color: #FAFAFA;
+  color: #fafafa;
   padding: 50px 100px;
-  max-width: 1440px;
 }
 
-p {
+.footer_p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 171%;
 }
 
-span {
-  font-family: var(--second-family);
+.footer_title {
+  font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 24px;
 }
 
-a {
+.footer_nav a {
+  text-decoration: none;
+  color: #2f2e2e;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 17px;
+  color: #fafafa;
 }
 
 .easy-zoom-effect:hover {
@@ -66,11 +68,11 @@ a {
 @media (426px <= width <= 1024px) {
   .footer {
     display: flex;
-    background-color: #2E2F32;
+    background-color: #2e2f32;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    color: #FAFAFA;
+    color: #fafafa;
     padding: 50px 100px;
     gap: 20px;
   }
