@@ -1,43 +1,41 @@
-.footer{
-    display: flex;
-    background-color: $footer-background;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    color: $footer-color;
-    padding: 50px 100px;
-    
+.footer {
+  display: flex;
+  background-color: $footer-background;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  color: $footer-color;
+  padding: 50px 100px;
 }
 
-.footer_p{
-    font-family: $textFont;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 171%;
+.footer_p {
+  font-family: $textFont;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 171%;
 }
 
-.footer_title{
-    font-family: $textFont;;
-    font-weight: 900;
-    font-size: 24px;
-    
+.footer_title {
+  font-family: $textFont;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 .footer_nav a {
-    text-decoration: none;
-    color: $primary-text-color;
-    font-family: $textFont;
-    font-weight: 400;
-    font-size: 17px;
-    color: $footer-color;
+  text-decoration: none;
+  color: $primary-text-color;
+  font-family: $textFont;
+  font-weight: 400;
+  font-size: 17px;
+  color: $footer-color;
 }
 
 .easy-zoom-effect:hover {
-transform: scale(1.25);
+  transform: scale(1.25);
 }
 
-@media (426px <= width <= 1024px){
-    .footer{
+@media (426px <= width <= 1024px) {
+  .footer {
     display: flex;
     background-color: $footer-background;
     flex-direction: column;
@@ -46,5 +44,5 @@ transform: scale(1.25);
     color: $footer-color;
     padding: 50px 100px;
     gap: 20px;
-    }
+  }
 }

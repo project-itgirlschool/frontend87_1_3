@@ -1,1 +1,131 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 67px 0 97px 95px;
 
+  &__logo-logo {
+    max-width: 100%;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__menu {
+    text-decoration: none;
+    font-family: $textFont;
+    color: $primary-text-color;
+    font-size: $font-size_link;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 53px;
+
+    &:hover {
+      color: rgb(150, 207, 240);
+    }
+  }
+
+  &__menu-home {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: $font-size_link;
+  }
+
+  &__menu-loupe {
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.solution {
+  display: flex;
+  position: static;
+
+  &-image {
+    max-width: 100%;
+    width: 1150px;
+    height: 739px;
+    margin: 0 0 0 200px;
+  }
+
+  &__wrapper {
+    align-self: center;
+    position: absolute;
+    width: 691px;
+    height: 550px;
+    background: linear-gradient(
+      91deg,
+      rgba(244, 246, 245, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+  }
+
+  &__wrapper_block {
+    padding: 138px 187px 139px 100px;
+  }
+
+  &__wrapper_title {
+    font-family: $mainFont;
+    font-weight: 400;
+    line-height: 68px;
+    color: $primary-text-color;
+    width: 436px;
+    height: 127px;
+  }
+  &__wrapper_text {
+    font-family: $textFont;
+    font-weight: 200;
+    font-size: 32px;
+    color: $primary-text-color;
+    width: 436px;
+    height: 127px;
+  }
+  &__arrow {
+    width: 162px;
+    height: 56px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+    background: linear-gradient(
+      91deg,
+      rgba(244, 246, 245, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+
+    &_link {
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 20px;
+
+    &__menu {
+      display: flex;
+    }
+  }
+
+  .solution {
+    &-image {
+      width: 576px;
+      height: 536px;
+      margin: 0 0 0 170px;
+    }
+
+    &__wrapper {
+      width: 491px;
+      height: 350px;
+    }
+
+    &__wrapper_block {
+      padding: 50px 40px;
+    }
+  }
+}

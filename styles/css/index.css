@@ -1,6 +1,110 @@
 /* colors */
 /* fonts */
 /* adaptive */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 67px 0 97px 95px;
+}
+.header__logo-logo {
+  max-width: 100%;
+}
+.header__logo-logo:hover {
+  transform: scale(1.5);
+}
+.header__menu {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: #2f2e2e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 53px;
+}
+.header__menu:hover {
+  color: rgb(150, 207, 240);
+}
+.header__menu-home {
+  color: #2f2e2e;
+  font-weight: 700;
+  font-size: 20px;
+}
+.header__menu-loupe:hover {
+  transform: scale(1.5);
+}
+
+.solution {
+  display: flex;
+  position: static;
+}
+.solution-image {
+  max-width: 100%;
+  width: 1150px;
+  height: 739px;
+  margin: 0 0 0 200px;
+}
+.solution__wrapper {
+  align-self: center;
+  position: absolute;
+  width: 691px;
+  height: 550px;
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+.solution__wrapper_block {
+  padding: 138px 187px 139px 100px;
+}
+.solution__wrapper_title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 68px;
+  color: #2f2e2e;
+  width: 436px;
+  height: 127px;
+}
+.solution__wrapper_text {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  color: #2f2e2e;
+  width: 436px;
+  height: 127px;
+}
+.solution__arrow {
+  width: 162px;
+  height: 56px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-around;
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+.solution__arrow_link {
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 20px;
+  }
+  .header__menu {
+    display: flex;
+  }
+  .solution-image {
+    width: 576px;
+    height: 536px;
+    margin: 0 0 0 170px;
+  }
+  .solution__wrapper {
+    width: 491px;
+    height: 350px;
+  }
+  .solution__wrapper_block {
+    padding: 50px 40px;
+  }
+}
 .project_header {
   display: flex;
   align-items: center;
