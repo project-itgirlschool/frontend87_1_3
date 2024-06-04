@@ -2,28 +2,35 @@
   padding: 7%;
 }
 
-.project_header {
+.project__header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 7%;
 }
-.project_nav {
+.project__nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
-.project_nav a {
+.project__nav a {
   text-decoration: none;
   color: $primary-text-color;
   font-size: $font-size_link;
   font-family: $textFont;
+  font-weight: 400;
 }
-.project_imgcontainer {
+
+nav a:first-of-type {
+  font-weight: 600;
+}
+
+.project__imgcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 8% 8%; //*вопрос Алене*//
+  gap: 15% 5%; //*вопрос Алене*//
   text-align: center;
+  padding-bottom: 5%;
 }

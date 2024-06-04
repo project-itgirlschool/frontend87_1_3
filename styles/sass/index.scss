@@ -10,17 +10,16 @@
   box-sizing: border-box;
 }
 
-body {
+.header,
+.main,
+.footer {
   max-width: 1440px;
+  margin: 0 auto;
 }
-
-// a {
-//   text-decoration: none;
-//   font-family: $textFont;
-// }
 
 h2 {
   font-family: $mainFont;
   font-size: $font-size_h2;
   color: $primary-text-color;
+  font-weight: 900;
 }

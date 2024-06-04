@@ -354,14 +354,18 @@
   box-sizing: border-box;
 }
 
-body {
+.header,
+.main,
+.footer {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 51px;
   color: #2f2e2e;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=index.css.map */
