@@ -49,11 +49,7 @@
   position: absolute;
   width: 691px;
   height: 550px;
-  background: linear-gradient(
-    91deg,
-    rgba(244, 246, 245, 0.9) 0%,
-    rgba(255, 255, 255, 0.9) 100%
-  );
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 .solution__wrapper_block {
   padding: 138px 187px 139px 100px;
@@ -80,11 +76,7 @@
   display: flex;
   align-self: flex-end;
   justify-content: space-around;
-  background: linear-gradient(
-    91deg,
-    rgba(244, 246, 245, 0.9) 0%,
-    rgba(255, 255, 255, 0.9) 100%
-  );
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 .solution__arrow_link {
   align-self: center;
@@ -245,7 +237,7 @@
   padding: 7%;
 }
 
-.project_header {
+.project__header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -253,25 +245,31 @@
   margin-bottom: 7%;
 }
 
-.project_nav {
+.project__nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 
-.project_nav a {
+.project__nav a {
   text-decoration: none;
   color: #2f2e2e;
   font-size: 20px;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
-.project_imgcontainer {
+nav a:first-of-type {
+  font-weight: 600;
+}
+
+.project__imgcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 8% 8%;
+  gap: 15% 5%;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .footer {
@@ -328,14 +326,18 @@
   box-sizing: border-box;
 }
 
-body {
+.header,
+.main,
+.footer {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 51px;
   color: #2f2e2e;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=index.css.map */
