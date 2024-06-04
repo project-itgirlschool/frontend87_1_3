@@ -49,11 +49,7 @@
   position: absolute;
   width: 691px;
   height: 550px;
-  background: linear-gradient(
-    91deg,
-    rgba(244, 246, 245, 0.9) 0%,
-    rgba(255, 255, 255, 0.9) 100%
-  );
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 .solution__wrapper_block {
   padding: 138px 187px 139px 100px;
@@ -80,11 +76,7 @@
   display: flex;
   align-self: flex-end;
   justify-content: space-around;
-  background: linear-gradient(
-    91deg,
-    rgba(244, 246, 245, 0.9) 0%,
-    rgba(255, 255, 255, 0.9) 100%
-  );
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
 }
 .solution__arrow_link {
   align-self: center;
@@ -241,6 +233,40 @@
   margin-right: 11%;
 }
 
+@media screen and (max-width: 768px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "topline topline" "planner-icon planner" "interior-icon interior" "exterior-icon exterior";
+    margin-bottom: 1%;
+    background: rgba(37, 77, 77, 0.2);
+  }
+  .serv-topline {
+    grid-area: topline;
+  }
+  .planner-icon {
+    grid-area: planner-icon;
+  }
+  .interior-icon {
+    grid-area: interior-icon;
+  }
+  .exterior-icon {
+    grid-area: exterior-icon;
+  }
+  .planner {
+    grid-area: planner;
+  }
+  .interior {
+    grid-area: interior;
+  }
+  .exterior {
+    grid-area: exterior;
+  }
+  .serv-bottomline {
+    display: none;
+  }
+}
 .project {
   padding: 7%;
 }

@@ -61,3 +61,41 @@
   justify-self: end;
   margin-right: 11%;
 }
+@media screen and (max-width: $tablet) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "topline topline"
+      "planner-icon planner"
+      "interior-icon interior"
+      "exterior-icon exterior";
+    margin-bottom: 1%;
+    background: $services-background;
+  }
+  .serv-topline {
+    grid-area: topline;
+  }
+  .planner-icon {
+    grid-area: planner-icon;
+  }
+  .interior-icon {
+    grid-area: interior-icon;
+  }
+  .exterior-icon {
+    grid-area: exterior-icon;
+  }
+  .planner {
+    grid-area: planner;
+  }
+  .interior {
+    grid-area: interior;
+  }
+  .exterior {
+    grid-area: exterior;
+  }
+  .serv-bottomline {
+    display: none;
+  }
+}
