@@ -167,7 +167,7 @@
   grid-template-rows: 1fr 1fr 3% 1fr;
   grid-template-areas: "topline topline topline" "planner-icon interior-icon exterior-icon" "planner interior exterior" "serv-bottomline serv-bottomline serv-bottomline";
   width: 100%;
-  height: 50vh;
+  height: 50%;
   justify-items: center;
   align-items: center;
   margin-bottom: 1%;
@@ -218,8 +218,8 @@
 
 .serv-bottomline {
   grid-area: serv-bottomline;
-  width: 11vw;
-  height: 6vh;
+  width: 11%;
+  height: 6%;
   text-align: center;
 }
 
