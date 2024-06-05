@@ -11,8 +11,8 @@
   height: 50%;
   justify-items: center;
   align-items: center;
-  margin-bottom: 1%;
-  background: #254d4d33;
+  background: $services-background;
+  color: $primary-text-color;
 }
 .serv-topline {
   grid-area: topline;
@@ -71,7 +71,6 @@
       "planner-icon planner"
       "interior-icon interior"
       "exterior-icon exterior";
-    margin-bottom: 1%;
     background: $services-background;
   }
   .serv-topline {

@@ -160,8 +160,8 @@
   height: 50%;
   justify-items: center;
   align-items: center;
-  margin-bottom: 1%;
   background: rgba(37, 77, 77, 0.2);
+  color: #2f2e2e;
 }
 
 .serv-topline {
@@ -229,7 +229,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "topline topline" "planner-icon planner" "interior-icon interior" "exterior-icon exterior";
-    margin-bottom: 1%;
     background: rgba(37, 77, 77, 0.2);
   }
   .serv-topline {
