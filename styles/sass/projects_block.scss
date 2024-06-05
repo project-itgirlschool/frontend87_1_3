@@ -1,36 +1,44 @@
 .project {
   padding: 7%;
-}
 
-.project__header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 7%;
-}
-.project__nav {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-.project__nav a {
-  text-decoration: none;
-  color: $primary-text-color;
-  font-size: $font-size_link;
-  font-family: $textFont;
-  font-weight: 400;
-}
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7%;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  &__nav a {
+    text-decoration: none;
+    color: $primary-text-color;
+    font-size: $font-size_link;
+    font-family: $textFont;
+    font-weight: 400;
+  }
+  &__nav a:hover {
+    color: rgb(150, 207, 240);
+  }
 
-nav a:first-of-type {
-  font-weight: 600;
+  &__imgcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15% 5%; //*вопрос Алене*//
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  nav a:first-of-type {
+    font-weight: 600;
+  }
 }
-
-.project__imgcontainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 15% 5%; //*вопрос Алене*//
-  text-align: center;
-  padding-bottom: 5%;
+// селектор на элементы, содержащие в классе [project_img]
+[class*="project_img"]:hover {
+  transform: scale(1.1);
+  box-shadow: 12px 12px 2px 1px $services-background;
 }
+c
