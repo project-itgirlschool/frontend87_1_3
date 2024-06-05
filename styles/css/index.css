@@ -256,6 +256,75 @@
     display: none;
   }
 }
+.about {
+  display: flex;
+  margin: 0 auto;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about__img {
+  width: 735px;
+  height: 571px;
+}
+
+.aboutUs__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 51px;
+  color: #2f2e2e;
+}
+
+.aboutUs__text {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 31px;
+  color: #2f2e2e;
+}
+
+.aboutUs__more {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2f2e2e;
+}
+
+.aboutUs__more:hover {
+  color: rgb(150, 207, 240);
+}
+
+@media (426px <= width <= 1024px) {
+  .about {
+    display: flex;
+    /* border: 1px rgb(0, 110, 255) solid; */
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .about__img {
+    width: auto;
+    height: auto;
+  }
+}
+@media (320px <= width <= 425px) {
+  .about {
+    display: flex;
+    /* border: 1px rgb(0, 255, 115) solid; */
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__img {
+    width: auto;
+    height: auto;
+  }
+}
 .project {
   padding: 7%;
 }
