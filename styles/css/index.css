@@ -259,7 +259,6 @@
 .project {
   padding: 7%;
 }
-
 .project__header {
   width: 100%;
   display: flex;
@@ -267,13 +266,11 @@
   justify-content: space-between;
   margin-bottom: 7%;
 }
-
 .project__nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
-
 .project__nav a {
   text-decoration: none;
   color: #2f2e2e;
@@ -281,11 +278,9 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-
-nav a:first-of-type {
-  font-weight: 600;
+.project__nav a:hover {
+  color: rgb(150, 207, 240);
 }
-
 .project__imgcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -293,6 +288,14 @@ nav a:first-of-type {
   gap: 15% 5%;
   text-align: center;
   padding-bottom: 5%;
+}
+.project nav a:first-of-type {
+  font-weight: 600;
+}
+
+[class*=project_img]:hover {
+  transform: scale(1.1);
+  box-shadow: 12px 12px 2px 1px rgba(37, 77, 77, 0.2);
 }
 
 .footer {
