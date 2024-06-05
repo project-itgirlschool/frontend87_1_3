@@ -1,7 +1,7 @@
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 3% 1fr;
+  grid-template-rows: 1fr 1fr 5% 1fr;
   grid-template-areas:
     "topline topline topline"
     "planner-icon interior-icon exterior-icon"
@@ -13,6 +13,7 @@
   align-items: center;
   background: $services-background;
   color: $primary-text-color;
+  font-family: $textFont;
 }
 .serv-topline {
   grid-area: topline;
@@ -29,9 +30,6 @@
 .services a {
   text-decoration: none;
   box-shadow: none;
-  transition: all 0.3s ease;
-  font-size: 27px;
-  font-weight: 600;
   color: #2f2e2e;
 }
 .services a:hover {
@@ -61,6 +59,7 @@
   justify-self: end;
   margin-right: 11%;
 }
+/* $tablet */
 @media screen and (max-width: $tablet) {
   .services {
     display: grid;
@@ -84,6 +83,63 @@
   }
   .exterior-icon {
     grid-area: exterior-icon;
+  }
+  .services a {
+    text-decoration: none;
+    box-shadow: none;
+    color: #2f2e2e;
+  }
+  .services a:hover {
+    text-decoration: underline;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .planner {
+    grid-area: planner;
+  }
+  .interior {
+    grid-area: interior;
+  }
+  .exterior {
+    grid-area: exterior;
+  }
+  .serv-bottomline {
+    display: none;
+  }
+}
+/* $mobile */
+@media screen and (max-width: $mobile) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "topline"
+      "planner"
+      "interior"
+      "exterior";
+    column-width: 100%;
+    font-size: 30px;
+  }
+  .serv-topline {
+    grid-area: topline;
+  }
+  .planner-icon {
+    display: none;
+  }
+  .interior-icon {
+    display: none;
+  }
+  .exterior-icon {
+    display: none;
+  }
+  .services a {
+    text-decoration: none;
+    box-shadow: none;
+    color: #2f2e2e;
+  }
+  .services a:hover {
+    text-decoration: underline;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   .planner {
     grid-area: planner;
