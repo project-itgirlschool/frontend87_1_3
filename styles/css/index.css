@@ -423,6 +423,69 @@
   overflow: hidden;
 }
 
+.testimonial {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 50px;
+}
+
+.testimonial__tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 51px;
+  text-align: center;
+  color: #000;
+}
+
+.testimonial__wapper {
+  display: flex;
+}
+
+.testimonial__ellipse {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonial__wapper__block {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.wapper_img {
+  width: 151px;
+  height: 151px;
+  margin: 10px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  float: right;
+  width: 543px;
+  height: 171px;
+  margin: 10px;
+}
+
+.block_tittle {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2f2e2e;
+}
+
+.block_text {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2f2e2e;
+}
+
 .footer {
   display: flex;
   background-color: #2e2f32;
