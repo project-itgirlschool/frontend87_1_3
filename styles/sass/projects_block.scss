@@ -1,12 +1,13 @@
 .project {
-  padding: 7%;
+  padding: 7% 7% 0 7%;
 
   &__header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
   }
   &__nav {
     display: flex;
@@ -19,28 +20,51 @@
     font-size: $font-size_link;
     font-family: $textFont;
     font-weight: 400;
+    padding-left: 10px;
   }
   &__nav a:hover {
     color: rgb(150, 207, 240);
   }
 
   &__imgcontainer {
+    min-height: 60vh;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    row-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    row-gap: 12px;
+    column-gap: 12px;
     text-align: center;
-    padding-bottom: 5%;
+    overflow: hidden;
   }
 
   nav a:first-of-type {
     font-weight: 600;
   }
   &_image {
-    overflow: hidden;
+    // overflow: hidden;
+    padding-top: 12px;
+  }
+  &_image img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 2px 1px $services-background;
+  }
+  &_image p {
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 22px;
+    color: $primary-text-color;
+    padding-top: 12px;
+  }
+  &_img1,
+  &_img4 {
+    justify-self: left;
+  }
+  &_img3,
+  &_img6 {
+    justify-self: right;
   }
 }
 // селектор на элементы, содержащие в классе [project_img]
-[class*="project_img"]:hover {
-  transform: scale(1.1);
-  box-shadow: 12px 12px 2px 1px $services-background;
-}
+// [class*="project_img"]:hover {
+//   transform: scale(1.1);
+//   box-shadow: 12px 12px 2px 1px $services-background;
+// }
