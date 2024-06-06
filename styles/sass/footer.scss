@@ -8,20 +8,20 @@
   padding: 50px 100px;
 }
 
-.footer_p {
+.footer__p {
   font-family: $textFont;
   font-weight: 400;
   font-size: 17px;
   line-height: 171%;
 }
 
-.footer_title {
+.footer__title {
   font-family: $textFont;
   font-weight: 900;
   font-size: 24px;
 }
 
-.footer_nav a {
+.footer__nav a {
   text-decoration: none;
   color: $primary-text-color;
   font-family: $textFont;
@@ -30,9 +30,6 @@
   color: $footer-color;
 }
 
-.easy-zoom-effect:hover {
-  transform: scale(1.25);
-}
 
 @media (426px <= width <= 1024px) {
   .footer {
@@ -45,4 +42,10 @@
     padding: 50px 100px;
     gap: 20px;
   }
+}
+
+@media (0 <= width <= 425px){
+  .footer{
+    display: none;
+}
 }
