@@ -75,8 +75,8 @@
   &__wrapper {
     align-self: center;
     position: absolute;
-    width: 40vw;
-    height: 80%;
+    width: 691px;
+    height: 550px;
     background: linear-gradient(
       91deg,
       rgba(244, 246, 245, 0.9) 0%,
@@ -93,7 +93,6 @@
 
   &__wrapper_title {
     font-size: clamp(14px, 3vw, $font-size_h2);
-    font-weight: 400;
     width: 32vw;
     height: 20vh;
   }
@@ -104,6 +103,7 @@
     color: $primary-text-color;
     width: 32vw;
     height: 20vh;
+    line-height: 39px;
   }
   &__arrow {
     position: absolute;
@@ -125,12 +125,13 @@
   }
 }
 
-@media screen and ($tablet <= width <= 924px) {
+@media screen and ($tablet <= width <= 1040px) {
   .header {
     display: flex;
-    flex-direction: column;
-    padding: 50px 0;
+    flex-direction: column-reverse;
+    padding: 20px 0;
     gap: 20px;
+    background-color: rgba(37, 77, 77, 0.2);
 
     &__menu {
       display: flex;
@@ -142,9 +143,6 @@
   }
 
   .solution {
-    display: flex;
-    justify-content: center;
-
     &-image {
       display: none;
     }
@@ -152,6 +150,7 @@
     &__wrapper {
       position: relative;
       width: 100%;
+      height: 100%;
       background: linear-gradient(
         91deg,
         rgba(244, 246, 245, 0.9) 0%,
@@ -163,6 +162,8 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding: 100px 50px 100px 50px;
+      gap: 2rem;
     }
 
     &__wrapper_title {
@@ -184,9 +185,15 @@
 @media screen and ($mobile<= width <= $tablet) {
   .header {
     display: flex;
-    flex-direction: column;
-    padding: 50px 0;
+    flex-direction: column-reverse;
+    padding: 20px 0;
     gap: 20px;
+    background-color: rgba(37, 77, 77, 0.2);
+
+    &__menu {
+      margin: 0 30px;
+      font-size: clamp(12px, 3vw, 20px);
+    }
 
     &__search-box {
       display: none;
@@ -204,6 +211,7 @@
     &__wrapper {
       position: relative;
       width: 100%;
+      height: 100%;
       background: linear-gradient(
         91deg,
         rgba(244, 246, 245, 0.9) 0%,
@@ -215,6 +223,8 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+      gap: 1rem;
+      padding: 100px 50px 100px 50px;
     }
 
     &__wrapper_title {
@@ -225,7 +235,7 @@
     &__wrapper_text {
       font-size: clamp(12px, 3vw, 35px);
       width: 100%;
-      height: 10vh;
+      height: 100%;
     }
     &__arrow {
       display: none;
@@ -236,12 +246,16 @@
 @media screen and (max-width: $mobile) {
   .header {
     display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    gap: 20px;
+    flex-direction: column-reverse;
+    padding: 10px 0;
+    gap: 10px;
+    background-color: rgba(37, 77, 77, 0.2);
 
     &__menu {
-      display: none;
+      display: flex;
+      width: 100%;
+      margin: 0 10px;
+      font-size: clamp(12px, 3vw, 20px);
     }
 
     &__search-box {
@@ -260,6 +274,7 @@
     &__wrapper {
       position: relative;
       width: 100%;
+      height: 100%;
       background: linear-gradient(
         91deg,
         rgba(244, 246, 245, 0.9) 0%,
@@ -270,20 +285,21 @@
     &__wrapper_block {
       display: flex;
       flex-direction: column;
+      padding: 50px 30px;
       text-align: center;
     }
 
     &__wrapper_title {
       font-size: clamp(14px, 3vw, 35px);
-      width: 400%;
+      width: 100%;
       height: 5vh;
     }
     &__wrapper_text {
       font-size: clamp(14px, 3vw, 35px);
-      width: 400%;
+      width: 100%;
       height: 10vh;
       margin-top: 5px;
-      line-height: 25px;
+      line-height: 20px;
     }
     &__arrow {
       display: none;
