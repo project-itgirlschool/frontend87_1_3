@@ -445,7 +445,6 @@
 @media (426px <= width <= 1024px) {
   .about {
     display: flex;
-    /* border: 1px rgb(0, 110, 255) solid; */
     margin: 0 auto;
     flex-direction: column;
   }
@@ -457,7 +456,6 @@
 @media (320px <= width <= 425px) {
   .about {
     display: flex;
-    /* border: 1px rgb(0, 255, 115) solid; */
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
@@ -590,6 +588,29 @@
   color: #2f2e2e;
 }
 
+@media (426px <= width <= 1024px) {
+  .testimonial__wapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: start;
+  }
+}
+@media (0 <= width <= 425px) {
+  .testimonial__wapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .wapper_img {
+    display: none;
+  }
+}
 .footer {
   display: flex;
   background-color: #2e2f32;

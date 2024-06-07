@@ -47,7 +47,6 @@
 @media (426px <= width <= 1024px){
     .about{
     display: flex;
-    /* border: 1px rgb(0, 110, 255) solid; */
     margin: 0 auto;
     flex-direction: column;
     
@@ -62,7 +61,6 @@
 @media (320px <= width <= 425px){
     .about{
     display: flex;
-    /* border: 1px rgb(0, 255, 115) solid; */
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;

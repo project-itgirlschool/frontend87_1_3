@@ -60,3 +60,30 @@
     font-size: 17px;
     color: $primary-text-color;
 }
+
+@media (426px <= width <= 1024px){
+    .testimonial__wapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content:start;
+        }
+}
+
+@media (0 <= width <= 425px){
+    .testimonial__wapper{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .wapper_img{
+        display: none;
+    }
+}
