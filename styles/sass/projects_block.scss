@@ -33,14 +33,14 @@
     row-gap: 12px;
     column-gap: 12px;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; // вопрос Алене //
   }
 
   nav a:first-of-type {
     font-weight: 600;
   }
   &_image {
-    // overflow: hidden;
+    overflow: hidden; // вопрос Алене //
     padding-top: 12px;
   }
   &_image img:hover {
@@ -63,6 +63,10 @@
     justify-self: right;
   }
 }
+// [class*="project_img"] {
+//   overflow: hidden;
+// }
+
 // селектор на элементы, содержащие в классе [project_img]
 // [class*="project_img"]:hover {
 //   transform: scale(1.1);

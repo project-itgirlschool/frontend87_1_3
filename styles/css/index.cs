@@ -487,7 +487,6 @@
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  padding-left: 10px;
 }
 .project__nav a:hover {
   color: rgb(150, 207, 240);
@@ -505,7 +504,6 @@
   font-weight: 600;
 }
 .project_image {
-  overflow: hidden;
   padding-top: 12px;
 }
 .project_image img:hover {
@@ -681,4 +679,4 @@ h2 {
   font-weight: 900;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.cs.map */
