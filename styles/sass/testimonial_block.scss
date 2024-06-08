@@ -61,7 +61,8 @@
     color: $primary-text-color;
 }
 
-@media (426px <= width <= 1024px){
+/* $tablet */
+@media (426px <= width <= 768px){
     .testimonial__wapper{
     display:flex;
     flex-direction: row;
@@ -71,19 +72,37 @@
     .testimonial{
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
         justify-content:start;
         }
+
+        .testimonial__wapper__block{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
 }
 
+/* $mobile */
 @media (0 <= width <= 425px){
+    .testimonial{
+        align-self: start;
+        justify-content: start;
+        }
+
     .testimonial__wapper{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .wapper_img{
         display: none;
+    }
+
+    .block{
+        display: inline-block;
+        flex-wrap: wrap;
+        max-width: 250px;
     }
 }
