@@ -11,6 +11,7 @@
     margin-left:  100px;
     justify-content: center;
     gap: 30px;
+    min-width: 400px;
 }
 
 .about__img{
@@ -44,30 +45,27 @@
     color: rgb(150, 207, 240);
 }
 
-@media (426px <= width <= 1024px){
+@media (426px <= width <= 768px){
     .about{
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     
 }
 
 .about__img{
-    width: auto;
-    height: auto;
-}
+    display: none;
+    }
 }
 
 @media (320px <= width <= 425px){
     .about{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-}
+        display: inline;
+        justify-content: start;
+        flex-wrap: wrap;
+        max-width: 250px;
+    }
 
 .about__img{
-    width: auto ;
-    height: auto;
+display: none;
 }
 }
