@@ -413,16 +413,16 @@
 }
 .about {
   display: flex;
-  margin-top: 50px;
-  gap: 30px;
+  padding: 80px 0 0 100px;
 }
 
 .aboutUs {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 90px;
   justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 .about__img {
@@ -517,7 +517,7 @@
   color: rgb(150, 207, 240);
 }
 .project__imgcontainer {
-  min-height: 40vh;
+  min-height: 35vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   row-gap: 12px;

@@ -1,85 +1,85 @@
-.about{
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
+.about {
+  display: flex;
+  // margin-top: 80px; // это закомментила, т.к. все через padding общего блока about us //
+  //   gap: 30px;
+  padding: 80px 0 0 100px; // добавила //
 }
 
-.aboutUs{
-    display: flex;
-    flex-direction: column;
-    margin-left:  20px;
-    justify-content: center;
-    gap: 30px;
-
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px; // убрала gap, увеличила margin //
+  justify-content: center;
+  gap: 30px;
+  width: 100%; // добавила чтобы текст растянулся больше вправо как в макете//
 }
 
-.about__img{
-    width: 735px;
-    height: 571px;
+.about__img {
+  width: 735px;
+  height: 571px;
 }
 
-.aboutUs__tittle{
-    font-family: $mainFont;
-    font-weight: 900;
-    font-size: $font-size_h2;
-    color: $primary-text-color;
+.aboutUs__tittle {
+  font-family: $mainFont;
+  font-weight: 900;
+  font-size: $font-size_h2;
+  color: $primary-text-color;
 }
 
-.aboutUs__text{
-    font-family: $mainFont;
-    font-weight: 400;
-    font-size: 31px;
-    color: $primary-text-color;
+.aboutUs__text {
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 31px;
+  color: $primary-text-color;
 }
 
-.aboutUs__more{
-    text-decoration: none;
-    font-family: $textFont;
-    font-weight: 600;
-    font-size: 24px;
-    color: $primary-text-color;
+.aboutUs__more {
+  text-decoration: none;
+  font-family: $textFont;
+  font-weight: 600;
+  font-size: 24px;
+  color: $primary-text-color;
 }
 
-.aboutUs__more:hover{
-    color: rgb(150, 207, 240);
+.aboutUs__more:hover {
+  color: rgb(150, 207, 240);
 }
 
 /* $tablet */
 @media screen and (max-width: $tablet) {
-.aboutUs{
+  .aboutUs {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
-    }
+  }
 
-    .about__img{
-        display: none;
-    }
+  .about__img {
+    display: none;
+  }
 
-    .about{
-        display: inline;
-
-    }
+  .about {
+    display: inline;
+  }
 }
 
 /* $mobile */
 @media screen and (max-width: $mobile) {
-    .about{
-        display: inline;
-        justify-content: start;
-        flex-wrap: nowrap;
-        max-width: 250px;
-    }
+  .about {
+    display: inline;
+    justify-content: start;
+    flex-wrap: nowrap;
+    max-width: 250px;
+  }
 
-    .aboutUs{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        max-width: 250px;
-        }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 250px;
+  }
 
-.about__img{
-display: none;
-}
+  .about__img {
+    display: none;
+  }
 }
