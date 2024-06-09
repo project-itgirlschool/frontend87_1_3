@@ -504,6 +504,7 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
+  flex-wrap: wrap;
 }
 .project__nav a {
   text-decoration: none;
@@ -526,6 +527,7 @@
 }
 .project nav a:first-of-type {
   font-weight: 600;
+  padding-left: 0;
 }
 .project_image {
   overflow: hidden;
@@ -583,12 +585,22 @@
   .project__nav a {
     font-size: 26px;
     font-weight: 600;
-    padding-left: 0;
+    padding-left: 30px;
   }
   .project__nav a:hover {
     color: rgb(150, 207, 240);
     font-size: 32px;
     font-weight: 800;
+  }
+}
+@media screen and (0 <= width <= 768px) {
+  .project__nav {
+    flex-wrap: wrap;
+  }
+  .project__nav a {
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 18px;
   }
 }
 .testimonial {
