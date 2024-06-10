@@ -255,6 +255,7 @@
   background: rgba(37, 77, 77, 0.2);
   color: #2f2e2e;
   font-family: "Inter", sans-serif;
+  padding-bottom: 6%;
 }
 
 .serv-topline {
@@ -276,7 +277,10 @@
 .services a {
   text-decoration: none;
   box-shadow: none;
+  font-size: 27px;
+  font-weight: 600;
   color: #2f2e2e;
+  font-family: "Playfair Display", serif;
 }
 
 .services a:hover {
