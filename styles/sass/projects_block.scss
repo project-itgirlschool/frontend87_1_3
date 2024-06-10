@@ -102,7 +102,10 @@
   .project__nav a {
     font-size: 26px;
     font-weight: 600;
-    padding-left: 30px;
+    padding-left: 0;
+  }
+  .project__nav a:first-of-type {
+    padding-left: 0;
   }
   .project__nav a:hover {
     color: rgb(150, 207, 240);
@@ -133,5 +136,10 @@
   }
   .project_image p {
     text-align: left;
+  }
+  .project__nav a:hover {
+    color: rgb(150, 207, 240);
+    font-size: 32px;
+    font-weight: 800;
   }
 }
