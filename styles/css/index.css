@@ -718,7 +718,7 @@
     justify-content: start;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px 0 0 0;
+    padding: 5% 0px 0px 7px;
   }
   .testimonial__wapper {
     display: flex;
