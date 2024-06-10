@@ -62,7 +62,7 @@
 }
 
 /* $tablet */
-@media screen and (max-width: $tablet){
+@media screen and ($mobile <= width <= $tablet){
     .testimonial{
         display: flex;
         flex-direction: column;
@@ -102,7 +102,7 @@
         justify-content: start;
         flex-direction: column;
         flex-wrap: wrap;
-        
+        padding: 20px 0 0 0;
         }
 
     .testimonial__wapper{
