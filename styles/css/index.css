@@ -433,7 +433,8 @@
     margin-left: 0;
     text-align: center;
   }
-  .aboutUs p {
+  .aboutUs p,
+  a {
     text-align: center;
   }
   .about__img {
@@ -445,19 +446,31 @@
   .about {
     display: flex;
     justify-content: flex-start;
-    padding: 20px 0 0 7px;
+    margin: 20px 7px 0 7px;
+    padding: 20px 7px 0 7px;
+    max-width: 100%;
   }
   .aboutUs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .aboutUs h2,
+  p,
+  a {
+    text-align: center;
+    max-width: 80%;
+    align-self: center;
   }
   .aboutUs__more {
-    align-self: flex-start;
+    align-self: center;
   }
   .aboutUs__text {
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
   }
   .about__img {
     display: none;
@@ -571,6 +584,9 @@
   }
 }
 @media screen and (425px <= width <= 851px) {
+  .project {
+    padding: 7% 7px 0px 7px;
+  }
   .project_img2,
   .project_img3,
   .project_img5,
@@ -579,11 +595,14 @@
   }
   .project__header {
     display: block;
+    max-width: 100%;
+    text-align: center;
   }
   .project__nav {
     padding-top: 3%;
-    width: 100%;
+    max-width: 100%;
     flex-direction: column;
+    justify-content: center;
   }
   .project__nav a {
     font-size: 26px;
@@ -602,6 +621,18 @@
 @media screen and (max-width: 425px) {
   .project {
     padding: 3% 0px 0px 7px;
+  }
+  .project__header {
+    text-align: center;
+  }
+  .project__imgcontainer p {
+    text-align: center;
+  }
+  .project_img2,
+  .project_img3,
+  .project_img5,
+  .project_img6 {
+    justify-self: center;
   }
   .project__nav {
     flex-direction: column;

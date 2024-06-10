@@ -83,8 +83,10 @@
     font-weight: 800;
   }
 }
-
 @media screen and ($mobile <= width <= 851px) {
+  .project {
+    padding: 7% 7px 0px 7px;
+  }
   .project_img2,
   .project_img3,
   .project_img5,
@@ -93,11 +95,14 @@
   }
   .project__header {
     display: block;
+    max-width: 100%;
+    text-align: center;
   }
   .project__nav {
     padding-top: 3%;
-    width: 100%;
+    max-width: 100%;
     flex-direction: column;
+    justify-content: center;
   }
   .project__nav a {
     font-size: 26px;
@@ -116,6 +121,18 @@
 @media screen and (max-width: $mobile) {
   .project {
     padding: 3% 0px 0px 7px;
+  }
+  .project__header {
+    text-align: center;
+  }
+  .project__imgcontainer p {
+    text-align: center;
+  }
+  .project_img2,
+  .project_img3,
+  .project_img5,
+  .project_img6 {
+    justify-self: center;
   }
   .project__nav {
     flex-direction: column;
