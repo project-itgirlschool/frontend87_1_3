@@ -1,8 +1,6 @@
 .about {
   display: flex;
   max-width: 1440px;
-  flex-direction: row;
-  flex-wrap: nowrap;
   // margin-top: 80px; // это закомментила, т.к. все через padding общего блока about us //
   //   gap: 30px;
   padding: 80px 0 0 100px; // добавила //
@@ -16,10 +14,10 @@
   gap: 30px;
   width: 100%; // добавила чтобы текст растянулся больше вправо как в макете//
 }
-
+// исправила на размеры из макета 735px и 571px//
 .about__img {
-  width: 635px;
-  height: 471px;
+  width: 735px;
+  height: 571px;
 }
 
 .aboutUs__tittle {
@@ -34,6 +32,8 @@
   font-weight: 400;
   font-size: 31px;
   color: $primary-text-color;
+  text-align: justify; //добавила, чтоб текст вылез право//
+  width: 100%;
 }
 
 .aboutUs__more {
@@ -48,41 +48,67 @@
   color: rgb(150, 207, 240);
 }
 
-/* $tablet */
-@media screen and (max-width: $tablet) {
-  .aboutUs {
+/* $tablet */ //здесь кажется ошибка, исправила на диапазон от моб до планшета//
+@media screen and ($mobile <= width <= $tablet) {
+  .about {
     display: flex;
+    justify-content: flex-start;
+    padding: 30px 0 0 7px;
+  }
+  .aboutUs {
     flex-direction: column;
-    align-items: center;
-    max-width: 400px;
+    justify-content: flex-start;
+    padding: 30px 0 0 7px;
+    margin-left: 0;
   }
 
   .about__img {
     display: none;
-  }
-
-  .about {
-    display: inline;
   }
 }
 
 /* $mobile */
 @media screen and (max-width: $mobile) {
   .about {
-    display: inline;
-    justify-content: start;
-    flex-wrap: nowrap;
-    max-width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0 0 7px;
   }
 
   .aboutUs {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    max-width: 250px;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+  .aboutUs__more {
+    align-self: flex-start;
+  }
+  .aboutUs__text {
+    font-size: 24px;
   }
 
   .about__img {
     display: none;
+  }
+  .aboutUs__tittle {
+    font-size: 44px;
+  }
+}
+
+//добавила медиа-запрос от планшета до 1160px//
+@media screen and ($tablet <= width <= 1160px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
   }
 }

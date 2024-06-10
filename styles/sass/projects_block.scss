@@ -28,7 +28,7 @@
   }
 
   &__imgcontainer {
-    min-height: 35vh;
+    min-height: 55vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     row-gap: 12px;
@@ -97,6 +97,7 @@
   .project__nav {
     padding-top: 6%;
     width: 100%;
+    flex-direction: column;
   }
   .project__nav a {
     font-size: 26px;
@@ -109,13 +110,28 @@
     font-weight: 800;
   }
 }
-@media screen and (0 <= width <= $tablet) {
+@media screen and (max-width: $mobile) {
+  .project {
+    padding: 5% 0px 0px 7px;
+  }
   .project__nav {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .project__nav a {
     padding-left: 0;
     padding-right: 20px;
     padding-top: 18px;
+  }
+  .project h2 {
+    font-size: 44px;
+  }
+  .project_img2,
+  .project_img3,
+  .project_img5,
+  .project_img6 {
+    justify-self: left;
+  }
+  .project_image p {
+    text-align: left;
   }
 }
