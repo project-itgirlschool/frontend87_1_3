@@ -103,16 +103,22 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+    max-width: 100%;
+    margin-right: 100px;
   }
   .aboutUs {
     display: flex;
     flex-direction: column;
     margin-left: 0;
     justify-content: center;
+    text-align: center;
     gap: 30px;
-    width: 100%;
+    max-width: 100%;
   }
   about__img {
     max-width: 100%;
+  }
+  .aboutUs p {
+    text-align: center;
   }
 }

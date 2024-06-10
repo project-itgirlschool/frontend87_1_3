@@ -468,17 +468,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+    max-width: 100%;
+    margin-right: 100px;
   }
   .aboutUs {
     display: flex;
     flex-direction: column;
     margin-left: 0;
     justify-content: center;
+    text-align: center;
     gap: 30px;
-    width: 100%;
+    max-width: 100%;
   }
   about__img {
     max-width: 100%;
+  }
+  .aboutUs p {
+    text-align: center;
   }
 }
 .project {
@@ -571,7 +577,7 @@
     display: block;
   }
   .project__nav {
-    padding-top: 6%;
+    padding-top: 3%;
     width: 100%;
     flex-direction: column;
   }
@@ -591,7 +597,7 @@
 }
 @media screen and (max-width: 425px) {
   .project {
-    padding: 5% 0px 0px 7px;
+    padding: 3% 0px 0px 7px;
   }
   .project__nav {
     flex-direction: column;
