@@ -95,7 +95,7 @@
     display: block;
   }
   .project__nav {
-    padding-top: 6%;
+    padding-top: 3%;
     width: 100%;
     flex-direction: column;
   }
@@ -115,7 +115,7 @@
 }
 @media screen and (max-width: $mobile) {
   .project {
-    padding: 5% 0px 0px 7px;
+    padding: 3% 0px 0px 7px;
   }
   .project__nav {
     flex-direction: column;
